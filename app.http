@@ -1,0 +1,29 @@
+post http://localhost:3004/register/
+Content-Type: application/json
+
+{
+  "username": "ravi_tej",
+  "name": "ravikumar",
+  "password": "raviteja",
+  "gender": "male",
+  "location": "Dell"
+}
+
+###
+post http://localhost:3004/login/
+Content-Type: application/json
+
+{
+  "username": "ravi_teJ",
+  "password": "raviteja@123"
+}
+
+###
+put http://localhost:3004/change-password/
+Content-Type: application/json
+
+{
+  "username": "ravi_tej",
+  "oldPassword": "raviteja",
+  "newPassword": "raviteja@123"
+}
